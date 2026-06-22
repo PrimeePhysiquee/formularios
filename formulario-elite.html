@@ -164,10 +164,28 @@ h1{font-size:21px;font-weight:800;letter-spacing:1px;margin-bottom:3px}
     <textarea name="objetivo_descripcion" class="tall" placeholder="ej. Quiero perder la barriga que he cogido este año, tengo una boda en junio y me gustaría entrar bien al traje. También quiero ganar volumen en los hombros porque me veo flojo de arriba..."></textarea>
   </div>
   <div class="r2">
-    <div class="field"><label>¿Para cuándo?</label><input type="text" name="objetivo_plazo" placeholder="ej. 3 meses, antes de junio..."></div>
+    <div class="field"><label>¿Cuánto peso quieres pesar? (kg)</label>
+      <input type="number" name="objetivo_peso_kg" step="0.5" placeholder="ej. 80">
+    </div>
     <div class="field"><label>Fase de entrenamiento</label>
       <select name="objetivo_fase"><option value="">Si lo sabes</option><option>Hipertrofia</option><option>Fuerza</option><option>Definición</option><option>Volumen</option><option>Recomposición</option><option>No lo sé</option></select>
     </div>
+  </div>
+  <div class="field"><label>¿En cuánto tiempo quieres lograrlo?</label>
+    <select name="objetivo_plazo">
+      <option value="">Selecciona</option>
+      <option>3 meses</option>
+      <option>4 meses</option>
+      <option>5 meses</option>
+      <option>6 meses</option>
+      <option>7 meses</option>
+      <option>8 meses</option>
+      <option>9 meses</option>
+      <option>10 meses</option>
+      <option>11 meses</option>
+      <option>12 meses</option>
+      <option>Más de 12 meses</option>
+    </select>
   </div>
 </div>
 
@@ -533,14 +551,16 @@ h1{font-size:21px;font-weight:800;letter-spacing:1px;margin-bottom:3px}
     </div>
 
     <!-- Hábitos y cocina -->
-    <div class="field"><label>Horario típico de tu día</label>
-      <div class="medcard"><div class="hgrid">
-        <label>Me levanto:</label><input type="text" name="horario_levanta" placeholder="ej. 7:00">
-        <label>Almuerzo:</label><input type="text" name="horario_almuerzo" placeholder="ej. 14:00">
-        <label>Entreno:</label><input type="text" name="horario_entreno" placeholder="ej. 19:30">
-        <label>Cena:</label><input type="text" name="horario_cena" placeholder="ej. 21:30">
-        <label>Me acuesto:</label><input type="text" name="horario_acuesta" placeholder="ej. 23:30">
-      </div></div>
+    <div class="r2">
+      <div class="field"><label>¿Cuántas comidas quieres al día?</label>
+        <select name="alim_num_comidas"><option value="">Selecciona</option><option>3 comidas</option><option>4 comidas</option><option>5 comidas</option><option>Indiferente</option></select>
+      </div>
+      <div class="field"><label>¿Desayunas normalmente?</label>
+        <select name="alim_desayuna"><option value="">Selecciona</option><option>Sí, siempre</option><option>A veces</option><option>No suelo desayunar</option></select>
+      </div>
+    </div>
+    <div class="field"><label>Horario aproximado de comidas</label>
+      <textarea name="alim_horario_comidas" placeholder="ej. Desayuno 8h · Almuerzo 14h · Merienda 17:30h · Batido post-entreno 20:30h · Cena 21:30h"></textarea>
     </div>
 
     <div class="r2">
